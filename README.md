@@ -86,9 +86,9 @@ import socket
 s = socket.socket()
 s.connect(('localhost',8000))
 while True:
-    ip = input("Enter logical Address : ")
+    ip = input("Enter MAC Address : ")
     s.send(ip.encode())
-    print("MAC Address:", s.recv(1024).decode())
+    print("logical Address:", s.recv(1024).decode())
 ```
 
 ## OUPUT - RARP
